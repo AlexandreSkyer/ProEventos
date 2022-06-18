@@ -1,0 +1,32 @@
+dotnet --version
+dotnet --list-sdks
+npm install -g @angular/cli
+
+ng serve -o
+
+
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+modificar o global.json pra versao do dotnet
+
+ no back/src
+dotnet tool list -g   
+dotnet tool uninstall --global dotnet-ef
+dotnet tool install --global dotnet-ef --version 5.0.2
+
+fazer o migration do banco
+dotnet ef database update -s ProEventos.API
+
+dotnet watch run -p ProEventos.API
+
+
+
+dotnet new
+dotnet new webapi -n ProEventos.API
+dotnet run
+
+dotnet dev-certs https --trust
+dotnet watch run
+dotnet new gitignore 
+git init
